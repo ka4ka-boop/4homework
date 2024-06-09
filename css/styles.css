@@ -429,7 +429,11 @@ section {
 }
 /* footer------------- */
 .footer-section {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.foter-subscribe {
+  margin-left: 80px;
 }
 .footer-studio {
   color: #f4f4fd;
@@ -486,14 +490,61 @@ section {
 .footer-info {
   margin-right: 120px;
 }
+.foter-subscribe {
+}
+.footer-form {
+}
+.footer-input {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 0 16px;
+  background-color: transparent;
+  color: #f4f4fd;
+}
+.footer-input::placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+.footer-form-btn {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  color: #f4f4fd;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #404bbf;
+}
+.footer-form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+/*--------modal-------*/
 .backdrop {
   width: 100%;
   height: 100%;
   background-color: rgba(9, 12, 222, 0.082);
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-/*--------modal-------*/
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .modal {
   width: 408px;
   min-height: 584px;
@@ -582,4 +633,32 @@ section {
   padding: 22px;
   background-color: transparent;
   resize: none;
+}
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+.modal-check-text {
+  font-size: 12px;
+  line-height: 14px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+}
+
+.modal-check-text span {
+  width: 16px;
+  height: 16px;
+  border-radius: 4;
+  border: 1px solid rgb(8, 19, 237);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modal-check:checked + .modal-check-text span {
+  background-color: #31d0aa;
+  fill: #404bbf;
 }

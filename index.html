@@ -414,6 +414,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer-section">
       <div class="container footer">
         <div class="footer-info">
@@ -458,8 +459,22 @@
             </li>
           </ul>
         </div>
+        <div class="foter-subscribe">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="footer-form"></form>
+          <label for="" aria-label="email"></label>
+          <input
+            type="email"
+            name="foote-email"
+            id="footer-email"
+            class="footer-input"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="footer-form-btn">Subscribe</button>
+        </div>
       </div>
     </footer>
+    <!-- backdrop -->
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
@@ -531,8 +546,22 @@
               placeholder="text input"
               class="modal-text"
             ></textarea>
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="policy" class="modal-check-text"
+              ><span
+                ><svg class="check-icon" width="10" height="10">
+                  <use href="./icons.svg#icon-btn-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
     </div>
